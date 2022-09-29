@@ -1,4 +1,5 @@
 import { useEffect,useState } from 'react';
+import "./App.css"
 
 function App() {
   const [peopleInSpace,setPeopleInSpace]= useState([]);
@@ -15,9 +16,9 @@ function App() {
   if(!isLoaded)return<h3>Loading...</h3>
    return (
   <div>
-    <ol>
+    <ol >
     {peopleInSpace.map((person)=>
-    <li>{person.name}</li>)}</ol>
+    <li >{person.name}</li>)}</ol>
     </div>
   );
 }
